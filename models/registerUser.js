@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const geocoder = require("../utils/geocoder");
 
-//schema for register te donor
+//schema for register user
 const registerUserSchema = new mongoose.Schema({
 
     name:{
@@ -47,7 +47,7 @@ const registerUserSchema = new mongoose.Schema({
       }
 });
 
-registerUserSchema.index({ "location": 1, "name": -1, "bloodGroup": 1 }, { unique: true });
+registerUserSchema.index({ "location": 1, "name": -1,  }, { unique: true });
 
 //Geo-location
 registerUserSchema.pre('save',async function(next){
