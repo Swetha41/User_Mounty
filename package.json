@@ -1,7 +1,7 @@
 {
-  "name": "plasma_donation",
+  "name": "UserProfile",
   "version": "1.0.0",
-  "description": "App is for register donor and search donor",
+  "description": "User Profile using Node Js",
   "main": "app.js",
   "scripts": {
     "start": "nodemon app.js",
